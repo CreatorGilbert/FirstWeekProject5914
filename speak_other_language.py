@@ -8,7 +8,8 @@ debug = True
 
 def mostLikelyTranscript(response):
     #assuming they are already sorted descending TODO select highest confidence
-    return response['results'][0]['alternatives'][0]['transcript']
+    print(response)
+    return '. '.join([i['alternatives'][0]['transcript'] for i in response['results']])
 
 def getEnglishPhrase(audiofile):
     s_t_t_response = speechToText(audiofile)

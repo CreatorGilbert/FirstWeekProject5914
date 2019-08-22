@@ -1,5 +1,5 @@
 from speak_other_language import speakOtherLanguage
 
 
-speakOtherLanguage('ja', 'recording2.mp3')
+speakOtherLanguage('es', 'audio1.mp3')
 
